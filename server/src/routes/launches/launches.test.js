@@ -7,14 +7,14 @@ const {
 } = require('../../services/mongo');
 
 const {
-    loadPlanetsData,
+    loadPlanetData,
 } = require('../../models/planets.model');
 
 describe('Launches API', () =>{
 
     beforeAll(async () =>{
         await mongoConnect();
-        await loadPlanetsData();
+        await loadPlanetData();
     });
 
     afterAll(async () =>{
